@@ -113,8 +113,8 @@ Here, you'll connect the board to the internet, get a static IP and then switch 
     If your router doesn't support assigning a static IP for a DHCP client, you can run the following commands to force a static IP on the `eth0` interface with connman:
 
     ```
-    connmanctl config ethernet_000000000000_cable --ipv4 manual <device_ip> <subnet_mask> <gateway_ip>
-    connmanctl config ethernet_000000000000_cable --nameservers <gateway_ip>
+    connmanctl config ethernet_000000000000_cable --ipv4 manual 192.168.1.10 255.255.255.0 192.168.1.1
+    connmanctl config ethernet_000000000000_cable --nameservers 192.168.1.1
     ```
 
     | Variable | Description | Example |
